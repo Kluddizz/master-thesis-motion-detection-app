@@ -6,7 +6,7 @@ import com.example.motiondetection.utils.ArrayHelper.Companion.leftShift
 import kotlin.system.measureTimeMillis
 
 abstract class MotionDetector {
-    private var personBuffer = Array(10) { Person(17) }
+    private var personBuffer = Array(20) { Person(17) }
 
     interface DetectionCallback {
         fun invoke(bitmap: Bitmap, person: Person, motion: Int, inferenceSpeed: Long)

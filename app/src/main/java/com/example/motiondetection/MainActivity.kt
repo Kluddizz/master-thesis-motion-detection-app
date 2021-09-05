@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         cameraManager = CameraManager(this, previewView)
 
         val poseModel = loadModel("movenet_lightning.tflite")
-        val motionModel = loadModel("motionnet_10.tflite")
+        val motionModel = loadModel("motionnet_20.tflite")
         detector = MotionNet(poseModel, motionModel)
 
         when {
